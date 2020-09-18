@@ -1,0 +1,1 @@
+# Zsh-PowerLevel10k-LSD
