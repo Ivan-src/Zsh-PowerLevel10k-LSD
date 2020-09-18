@@ -1,10 +1,12 @@
-# Zsh + PowerLevel10k + LSD
+# OH-MY-ZSH + PowerLevel10k + LSD
 
-#Install Oh-My-Bash
+This is my Linux Terminal configuration.
+
+# Install Oh-My-Bash
 
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
-#Install Powerlevel10k
+# Install Powerlevel10k
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 nano .zshrc
@@ -26,7 +28,7 @@ Transient Prompt = No
 Instant Prompt Mode = Off
 Apply Changes = yes
 
-#========= Configurar .p10k.zsh ================
+# Configurar .p10k.zsh
 
 typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
 	os_icon
@@ -49,7 +51,7 @@ NOTA: Para root buscar la linea "typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE="
 cambiar por POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE="# " y comentar la linea #typeset -g POWERLEVEL9K_CONTEXT_PREFIX='with'
 
 
-#========= Instalar Neofetch ==================
+# Instalar Neofetch
 
 >> Debian (Apt)
 sudo apt-get install neofetch
@@ -62,7 +64,7 @@ sudo dnf install neofetch
 >> Arch
 sudo pacman -S neofetch
 
-#======== Ejecutar neofetch al iniciar la consola ========
+# Ejecutar neofetch al iniciar la consola
 
 nano .bashrc
 **Ir al final del archivo y escribir neofetcch
@@ -73,18 +75,17 @@ which zsh
 sudo userdmod --shell /usr/bin/zsh mrrob0t
 **Reiniciar**
 
-#Configurar el archivo .zshrc con neofetch ======
+# Configurar el archivo .zshrc con neofetch
 ir al final y escribir neofetch
 
 
 NOTA: Hacer esto tanto para el usuario normal como para el usuario root
 
-#===================
-Themas de zhs
+# Themes for zhs
 https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 
-#Otras configuraciones para .zshrc
+# Otras configuraciones para .zshrc
 Ejecutar bash para obtener el path
 	echo $PATH
 Copiar y pegar en .zshrc
@@ -104,7 +105,7 @@ alias ls='lsd --group-dirs=first'
 SAVEHIST=1000 
 HISTFILE=~/.zsh_history
 
-#=========== Descargar e instalar LSD
+# Descargar e instalar LSD
 
 https://github.com/Peltoche/lsd/releases/tag/0.14.0
 descargar: lsd_0.14.0_amd64.deb
@@ -112,7 +113,6 @@ dpkg -i lsd_0.14.0_amd64.deb
 
 
 
-========================= WARNING =========================
-#=========== Se pueden aplicar los cambios solo a un archivo
-borrar la .zshrc de root y solo aplicar cambios en el usuario normal
+# !!!!WARNING!!!!!
+Se pueden aplicar los cambios solo a un archivo borrando la .zshrc de root y solo aplicar cambios en el usuario normal con un link (I haven't tested yet).
 ln -s -f /home/mrrob0t/.zshrc .zshrc
