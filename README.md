@@ -2,17 +2,17 @@
 
 This is my Linux Terminal configuration, tested on Kali Linux, ParrotOS, RedHat and Manjaro.
 
-###Install Hack Font
+### Install Hack Font
 -------------
 We need to use a patched font so the terminal will be able to recognize all the icons, I like to use the font "HACK".
 
 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
-###Install Oh-My-Bash
+### Install Oh-My-Bash
 -------------
 `$ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
 
-###Install Powerlevel10k
+### Install Powerlevel10k
 -------------
 `$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
 
@@ -26,7 +26,7 @@ https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/c
 
 `ZSH_THEME="powerlevel10k/powerlevel10k"`
 
-###Use the zsh command to configure the terminal.
+### Use the zsh command to configure the terminal.
 -------------
 - This are the options that I use:
 
@@ -45,7 +45,7 @@ Apply Changes = yes
 
 **If the terminal ask you to define zsh terminal as the default, click yes, otherwise you can do it manually after.**
 
-###Configure .p10k.zsh
+### Configure .p10k.zsh
 -------------
 Search the following line
 
@@ -101,7 +101,7 @@ Go to the bottom and write neofetch, then save it and exit.
 We do the same with .zshrc.
 We need to do this so the terminal will start with this command and will show us a banner.
 
-###Define ZSH as your default terminal 
+### Define ZSH as your default terminal 
 -------------
 With this command we see where zsh is.
 `$ which zsh`
@@ -110,7 +110,7 @@ Then we define zsh a default.
 Reboot System to apply changes.
 `$ sudo reboot now`
 
-###Another Configuration.
+### Another Configuration.
 -------------
 Execute bash to see the path and export to the zsh terminal.
 `$ bash`
@@ -145,10 +145,10 @@ https://github.com/Peltoche/lsd/releases/tag/0.14.0
 And install it with:
 `$ dpkg -i lsd_0.14.0_amd64.deb`
 
-####NOTE: We need to do all this process with normal user and the root user.
+#### NOTE: We need to do all this process with normal user and the root user.
 -------------
 We could apply all the changes deleting .zshrc from root and just applying changes in .zshrc from normal user a symbolic link (but I haven't tested it yet).
 
 `# ln -s -f /home/your_user/.zshrc .zshrc`
 
-###End
+### End
