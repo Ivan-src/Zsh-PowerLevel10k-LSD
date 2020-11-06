@@ -10,7 +10,7 @@ We need to use a patched font so the terminal will be able to recognize all the 
 
 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
-### Install Oh-My-Bash
+### Install Oh-My-ZSH
 -------------
 `$ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
 
