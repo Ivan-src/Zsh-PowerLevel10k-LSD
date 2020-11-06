@@ -2,6 +2,8 @@
 
 This is my Linux Terminal configuration, tested on Kali Linux, ParrotOS, RedHat and Manjaro.
 
+![Kali_Linux](https://user-images.githubusercontent.com/55292448/98312716-e9533800-1f97-11eb-9855-7a9e4cee6baa.png)
+
 ### Install Hack Font
 -------------
 We need to use a patched font so the terminal will be able to recognize all the icons, I like to use the font "HACK".
